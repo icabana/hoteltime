@@ -1,0 +1,10 @@
+INSERT INTO `#__vikbooking_config` (`param`,`setting`) VALUES ('smssendwhen','1');
+INSERT INTO `#__vikbooking_texts` (`param`,`exp`,`setting`) VALUES ('smsadmintplpend','Administrator SMS Template (Pending)','A prending reservation ({booking_id}) for {tot_guests} guests was created by {customer_name} from {customer_country}.\nCheck-in on {checkin_date} for {num_nights} nights.');
+INSERT INTO `#__vikbooking_texts` (`param`,`exp`,`setting`) VALUES ('smscustomertplpend','Customer SMS Template (Pending)','Dear {customer_name},\nYour booking for {num_nights} nights and {tot_guests} guests is waiting for the payment before the confirmation.');
+ALTER TABLE `#__vikbooking_orders` ADD COLUMN `colortag` varchar(256) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_orders` ADD COLUMN `closure` tinyint(1) NOT NULL DEFAULT 0;
+ALTER TABLE `#__vikbooking_customers` ADD COLUMN `ischannel` tinyint(1) NOT NULL DEFAULT 0;
+ALTER TABLE `#__vikbooking_customers` ADD COLUMN `chdata` varchar(256) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_customers` ADD COLUMN `company` varchar(128) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_customers` ADD COLUMN `vat` varchar(64) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_ordersrooms` ADD COLUMN `room_cost` decimal(12,2) DEFAULT NULL;

@@ -1,0 +1,432 @@
+/* CSS adapter file for Joomla 4.x */
+
+/*
+* Font is bigger in J4, so this class of cells
+* should be a bit wider.
+*/
+table.admintable td.vbo-config-param-cell {
+	width: 240px;
+}
+/*
+* Tables no longer support centered classes
+*/
+.center, .table td.center, .table th.center {
+	text-align: center;
+}
+/*
+* This simulates the class .custom-select of BS4
+*/
+form select {
+	display: inline-block;
+	max-width: 100%;
+	height: calc(2.25rem + 2px);
+	padding: .375rem 1.75rem .375rem .75rem;
+	line-height: 1.5;
+	color: #495057;
+	vertical-align: middle;
+	background: #fefefe url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+	background-size: auto auto;
+	background-size: 8px 10px;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	min-width: unset;
+	max-width: 250px;
+}
+form select[multiple] {
+	height: auto;
+	background-image: none;
+	padding: 5px;
+}
+/*
+* Textarea fields do not have any styling
+*/
+textarea {
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+}
+/*
+* This is for the tabs of the Configuration page,
+* and for most Manage views.
+*/
+div.current {
+	background: #fff;
+}
+table.admintable {
+	background: #fff;
+}
+/*
+* To not start the overflow in the modal dialogs of VBO
+*/
+.vbo-smstpl-bgroup {
+	display: inline-block !important;
+}
+/*
+* Classes .label and .badge
+*/
+.label {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.label, .badge {
+	display: inline-block;
+	padding: 2px 4px;
+	font-size: 10.998px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #fff;
+	vertical-align: baseline;
+	white-space: nowrap;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #999;
+}
+.label-success, .badge-success {
+	background-color: #3c763d;
+}
+.label-warning, .badge-warning {
+	background-color: #f89406;
+}
+/*
+* Input fields have a z-index greater than 0, so the sub-menu
+* of Vik Booking must have an even greater z-index property.
+*/
+.vbo-menu-right ul {
+	z-index: 99;
+}
+/*
+* The rules below are needed to beautify the layout
+* with the default template of J4 and BS4 rules.
+*/
+.vbo-ratesoverview-roomsel-entry {
+	background: #fff;
+}
+/*
+* @TODO: stilizzare gli input text della View editbusy
+*/
+/* General adapter **/
+.input-append, .input-prepend {
+    display: inline-block;
+    margin-bottom: 9px;
+    vertical-align: middle;
+    font-size: 0;
+    white-space: nowrap;
+}
+/* Input style adapter **/
+input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], 
+input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], 
+input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	max-width: 240px;
+	background-color: #fefefe;
+	font-size: 1rem;
+	padding: 5px 6px;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-image: none;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+textarea {
+	padding: 10px;
+}
+/* Dashboard - Heading adapter to J3 */
+.vbo-dashboard-today-checkin-wrapper h4, .vbo-dashboard-today-checkout-wrapper h4 {
+    margin: 12px 0 !important;
+}
+/* Dashboard - input e select inside heading or field group **/
+.btn-toolbar .btn-wrapper {
+	display: inline-block;
+	margin: 0 0 8px 5px;
+}
+/* Component Menu style **/
+.vbo-menu-parent-li > span {
+	font-weight: normal;
+}
+/* Dashboard - aligning the search fields **/
+.btn-wrapper > * {
+	float: left;
+}
+.vbo-dashboard-today-bookings .btn-toolbar {
+	margin-bottom: 0;
+}
+.vbo-dashboard-today-bookings .btn-wrapper .form-control {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	line-height: 1.6em;
+}
+.vbo-dashboard-today-bookings .btn-wrapper .btn {
+	background: #e7e7e7;
+	border: 1px solid #ced4da;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.vbo-dashboard-today-checkin-wrapper h4 #arrivals-tot, .vbo-dashboard-today-checkout-wrapper h4 #departures-tot {
+	margin-top: -3px;
+}
+.vbo-dashboard-today-roomocc-det > h5 span {
+	font-size: 11px;
+	width: 22px;
+	height: 22px;
+	line-height: 15px;
+	font-weight: normal;
+}
+.vbo-roomdet-guests-toggleword {
+	border-bottom: 0 !important;
+}
+.vbo-checkin-notes-cont textarea {
+	padding: 10px;
+}
+/* Dashboard - svg problems **/
+.vbo-dashboard-chart-container .donutChart {
+	padding: 0;
+}
+/* Global Configuration - Tabs style fix **/
+dt.tabs span h3 {
+	padding-top: 5px;
+}
+.admintable .btn i[class^="icon-"]{
+	margin-right: 5px;
+}
+/* Global Configuration - parameters detail fix **/
+.vbo-resmodcanc-lim {
+	margin-left: 10px;
+}
+.vbo-resmodcanc-lim label {
+	display: inline-block;
+}
+.vbo-resmodcanc-lim input {
+	display: inline-block;
+}
+/* Tax Rate - fixing style problems **/
+.add-tax-breakdown-name, .add-tax-breakdown-rate {
+	padding-bottom: 9px;
+}
+/* Options/Extras - tooltip info message **/
+.vbo-outer-info-message {
+	z-index: 1;
+}
+/* Room details - fixing style problems **/
+#vbo-distfeatures-toggle i {
+	margin-right: .25em;
+}
+.vbplusminuscont {
+	margin-bottom: 10px;
+}
+.captionremoveimg .icon-remove {
+	font-size: 14px;
+}
+tr.vbroomparamp td span.js-switcher {
+	padding-left: 0;
+}
+tr.vbroomparamp td .switcher-label-1, tr.vbroomparamp td .switcher-label-0 {
+	display: inherit;
+	margin-top: 10px;
+}
+tr.vbroomparamp td span {
+	vertical-align: top;
+}
+.vbo-runit-feature {
+	border-bottom: 0;
+}
+/* Special Pricing - fixing filter style **/
+.vbo-ratesoverview-roomsel-entry {
+	padding-bottom: 10px;
+}
+/* Rates Overview - fixing filter style **/
+#vbo-ratesoverview-calculate, .vbo-ratesoverview-roomsel-entry .btn[type="button"] {
+	border: 1px solid #ced4da;
+}
+/* Rates Overview - Calendar Pricing Overview **/
+.vbo-roverview-datecmd-top .vbo-roverview-datecmd-date {
+	width: 120px;
+}
+.vbo-roverviewrowone form[name^="vbratesoverview"] a, .vbo-roverviewrowone form[name^="vbratesoverview"] a:link, 
+.vbo-roverviewrowone form[name^="vbratesoverview"] a:active, .vbo-roverviewrowone form[name^="vbratesoverview"] a:visited {
+	width: 25px;
+}
+.vbo-roverviewrowone .bluedays > span {
+	line-height: 1.2em;
+}
+.vbo-roverview-roomunits {
+	height: 18px;
+	width: 18px;
+}
+.vbo-ratesoverview-period-inner {
+	background: #e7e7e7;
+}
+.vbo-ratesoverview-lostab-cont {
+	background: #fff;
+	display: block;
+	padding: 10px 10px 20px;
+}
+.vbo-ratesoverview-numnight::after {
+	width: 20px;
+	height: 20px;
+	line-height: 16px;
+}
+#vbo-addnumnight-act {
+	margin-top: 6px;
+}
+.vbo-ratesoverview-tabscont div.vbo-ratesoverview-tab-unactive {
+	background: #e7e7e7;
+}
+.vbo-ratesoverview-roomdetails {
+	margin-top: 20px;
+}
+.vbo-ratesoverview-roomdetails h3 {
+	margin-bottom: 15px;
+}
+.vbo-roverw-setnewrate-vcm {
+	margin: 10px auto;
+}
+.vbo-roverw-daymod {
+	font-size: 11px;
+}
+.vbo-roverw-daymod-infospids {
+	font-size: 10px;
+	font-weight: normal;
+	width: 18px;
+	height: 18px;
+}
+.vbo-roverw-daymod-infospids-incont ul {
+	padding:0;
+}
+/* Calendar view **/
+.vbo-quickres-wrapper .admintable .input-append {
+	display: inline-block;
+}
+.vbo-quickres-wrapper .admintable .input-append .hasDatepicker, .vbo-dashboard-today-occ .today-search {
+	padding: 5px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.vbo-quickres-wrapper .admintable .input-append .btn, .vbo-dashboard-today-occ .btn {
+	background: #e7e7e7;
+	border: 1px solid #ced4da;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	vertical-align: top;
+	line-height: 1.45em;
+}
+/* Availability Overview - Calendar bug **/
+.bluedays {
+	font-weight: normal;
+}
+.vbo-overview-roomunits {
+	min-height: 25px;
+	min-width: 25px;
+	padding: 3px;
+	font-weight: normal;
+	line-height: 20px;
+}
+/* Bookings List - Filter toolbar bugs **/
+.vbo-btn-toolbar .input-append input[type="text"] {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.vbo-btn-toolbar .input-append .btn {
+	border: 1px solid #ced4da;
+}
+/* Booking Details - General bugs **/
+.vbo-bookdet-foot .vbo-country-flag-left {
+	margin: 6px 7px 0 0;
+}
+.vbo-country-flag-left {
+	margin-top: 2px;
+}
+.vbo-bookingdet-summary-total td:first-child {
+	vertical-align: top;
+}
+.vbo-bookingdet-detcont input[type="text"] {
+	margin-bottom: 5px;
+}
+/* Edit Reservation - General Bugs **/
+.vbo-editbooking-room-pricetype-cost select {
+	font-size: 13px;
+}
+.vbo-editbooking-summary-room > div {
+	padding-top: 20px;
+}
+.vbo-bookingdet-detcont .field-calendar #checkindate, .vbo-bookingdet-detcont .field-calendar #checkoutdate {
+	margin-bottom: 0;
+	width: 110px !important;
+}
+.vbo-bookingdet-detcont label {
+	display: block;
+}
+.vbo-editbooking-room-extracosts .vbo-ebusy-addextracost {
+	border: 1px solid #ced4da;
+}
+.vbo-editbooking-room-extracosts .vbo-ebusy-addextracost i {
+	margin-right: 5px;
+}
+.vbo-editbooking-totpaid label {
+	display: block;
+}
+.vbo-editbooking-addroom i {
+	margin-right: 5px;
+}
+.vbo-add-room-overlay .vbo-add-room-entry {
+	margin: 5px 0;
+}
+.vbo-add-room-overlay label {
+	display: block;
+}
+/* Invoices - General Bugs **/
+.vbo-invoices-inv-container {
+	background: #fff;
+	font-size: 12px;
+}
+.vbo-invoices-inv-container {
+	height: 182px;
+}
+.vbo-invoices-inv-container .vbo-country-flag-left {
+	margin: 1px 3px 0 0;
+}
+.vbo-timeline-container {
+	margin-bottom: 15px;
+}
+.vbo-timeline-container .btn-toolbar {
+	margin-bottom: 10px;
+}
+.vbo-timeline-content .label-info {
+	background: #31708f;
+	font-size: 11px;
+	font-weight: normal;
+	padding: 6px 8px !important;
+}
+.vbo-timeline-content .badge {
+	font-size: 11px;
+	font-weight: normal;
+	padding: 3px .4em;
+}
+.vbo-timeline-content .btn {
+	border: 1px solid #ced4da;
+}
+form[name="invoicesform"] .btn-toolbar .pull-right .btn, #vbo-statsform .btn-toolbar .pull-right .btn {
+	border: 1px solid #ced4da;
+	background: #fff;
+	cursor: pointer;
+}
+.vbo-timeline-content {
+	background: #fff;	
+	padding: 40px 15px 15px;
+}
+.vbo-invoices-inv-back-commands .btn {
+	border: 1px solid #ced4da;
+}
+.vbo-timeline-relative .vbo-timeline-label {
+	font-size: 14px;
+	width: auto;
+	top: 40px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+.btn-toolbar #filterinvoices {
+	padding: 5px 6px;
+}

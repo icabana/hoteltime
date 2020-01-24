@@ -1,0 +1,17 @@
+ALTER TABLE `#__vikbooking_gpayments` ADD COLUMN `params` varchar(512) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_orders` ADD COLUMN `paymentlog` text DEFAULT NULL;
+ALTER TABLE `#__vikbooking_orders` ADD COLUMN `paymcount` tinyint(2) NOT NULL DEFAULT 0;
+ALTER TABLE `#__vikbooking_orders` ADD COLUMN `adminnotes` text DEFAULT NULL;
+ALTER TABLE `#__vikbooking_seasons` ADD COLUMN `roundmode` varchar(32) DEFAULT NULL;
+INSERT INTO `#__vikbooking_config` (`param`,`setting`) VALUES ('numberformat','2:.:,');
+INSERT INTO `#__vikbooking_config` (`param`,`setting`) VALUES ('mindaysadvance','0');
+INSERT INTO `#__vikbooking_config` (`param`,`setting`) VALUES ('multipay','0');
+INSERT INTO `#__vikbooking_config` (`param`,`setting`) VALUES ('typedeposit','pcent');
+ALTER TABLE `#__vikbooking_restrictions` ADD COLUMN `dfrom` int(10) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_restrictions` ADD COLUMN `dto` int(10) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_restrictions` ADD COLUMN `wdaytwo` tinyint(1) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_restrictions` ADD COLUMN `wdaycombo` varchar(28) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_restrictions` ADD COLUMN `allrooms` tinyint(1) NOT NULL DEFAULT 1;
+ALTER TABLE `#__vikbooking_restrictions` ADD COLUMN `idrooms` varchar(512) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_rooms` ADD COLUMN `mintotpeople` int(10) NOT NULL DEFAULT 1;
+ALTER TABLE `#__vikbooking_rooms` ADD COLUMN `params` varchar(512) DEFAULT NULL;

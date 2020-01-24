@@ -1,0 +1,17 @@
+ALTER TABLE `#__vikbooking_customers` ADD COLUMN `address` varchar(256) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_customers` ADD COLUMN `city` varchar(64) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_customers` ADD COLUMN `zip` varchar(16) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_customers` ADD COLUMN `doctype` varchar(64) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_customers` ADD COLUMN `docnum` varchar(128) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_customers` ADD COLUMN `docimg` varchar(128) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_customers` ADD COLUMN `notes` text DEFAULT NULL;
+ALTER TABLE `#__vikbooking_custfields` ADD COLUMN `flag` varchar(64) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_ordersrooms` ADD COLUMN `extracosts` varchar(2048) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_prices` ADD COLUMN `closingd` text DEFAULT NULL;
+ALTER TABLE `#__vikbooking_restrictions` ADD COLUMN `ctad` varchar(28) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_restrictions` ADD COLUMN `ctdd` varchar(28) DEFAULT NULL;
+ALTER TABLE `#__vikbooking_orders` ADD COLUMN `inv_notes` varchar(256) DEFAULT NULL;
+INSERT INTO `#__vikbooking_config` (`param`, `setting`) VALUES('depifdaysadv', '0');
+INSERT INTO `#__vikbooking_config` (`param`, `setting`) VALUES('depcustchoice', '0');
+INSERT INTO `#__vikbooking_config` (`param`, `setting`) VALUES('datesep', '/');
+INSERT INTO `#__vikbooking_config` (`param`, `setting`) VALUES('vcmautoupd', '1');
