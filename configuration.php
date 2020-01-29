@@ -4,7 +4,7 @@ class JConfig {
 	public $offline_message = 'Este sitio está cerrado por tareas de mantenimiento.<br />Por favor, inténtelo nuevamente más tarde.';
 	public $display_offline_message = '1';
 	public $offline_image = '';
-	public $sitename = 'HotelDemo';
+	public $sitename = 'Hotel Diamante';
 	public $editor = 'tinymce';
 	public $captcha = '0';
 	public $list_limit = '20';
@@ -16,7 +16,7 @@ class JConfig {
 	public $host = 'localhost';
 	public $user = 'root';
 	public $password = '';
-	public $db = 'hoteldemo';
+	public $db = 'hotel2020';
 	public $dbprefix = 'd8gu4_';
 	public $live_site = '';
 	public $secret = '64wf9kAW4zJuq0fu';
@@ -57,8 +57,8 @@ class JConfig {
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
 	public $feed_email = 'none';
-	public $log_path = 'C:\\xampp\\htdocs\\hoteldemo\\administrator/logs';
-	public $tmp_path = 'C:\\xampp\\htdocs\\hoteldemo/tmp';
+	public $log_path = 'C:\\xampp\\htdocs\\hoteltime\\administrator\\logs';
+	public $tmp_path = 'C:\\xampp\\htdocs\\hoteltime\\tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
 	public $shared_session = '0';
