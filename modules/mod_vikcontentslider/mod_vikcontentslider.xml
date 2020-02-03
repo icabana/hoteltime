@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0.0" client="site" method="upgrade">
+	<name>VikContentSlider</name>
+	<author>Valentina Arras - e4j - Extensionsforjoomla.com</author>
+	<creationDate>July 2018</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>tech@extensionsforjoomla.com</authorEmail>
+	<authorUrl>https://e4j.com</authorUrl>
+	<version>6.1</version>
+	<description>
+<![CDATA[ 
+<div style="font-weight:normal; font-size:13px;">
+<h2 style="color:#666; font-size:22px; font-weight:normal; border-bottom:1px solid #ddd;">Vik Content Slider</h2>
+<p>With this module you can create as many slider as you want. <br />
+The configuration is quite is, you have just to choose the visibility of dots, arrows, autostops, etc. <br />
+
+After you do it, you have five fields for each image:<br />
+- <strong>Background image</strong><br />
+This field allow you to choose an image as background for the slide.<br />
+- <strong>Title slide</strong><br />
+In this field you can write the title of your slide<br />
+- <strong>Caption</strong><br />
+This is the field for the description of your slide<br />
+- <strong>Read More Link</strong><br />
+In this field you may to insert a link for your slide<br />
+
+You can configure Vik Content Slider, so go to Extensions > Module Manager, edit the Vik Content Slider module and set up your slider. Enjoy it!</p>
+<div style="font-size:12px; float:right;"><a style="color:#666;" href="https://e4j.com/" target="_blank">Copyright Extensions For Joomla</a></div>
+
+</div>]]>
+	</description>
+
+	<files>
+		<filename module="mod_vikcontentslider">mod_vikcontentslider.php</filename>
+		<filename>mod_vikcontentslider.xml</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>css</folder>
+		<folder>src</folder>
+		<folder>php</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">languages/en-GB/en-GB.mod_vikcontentslider.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			
+			<fieldset name="basic" addfieldpath="/modules/mod_vikcontentslider/php">
+				<field name="Headerslide" type="header" default="VIKCSYOURSLIDES" label="" description="" />
+				<field name="vikassetsp" type="vikassets" label="" />
+				<field name="viksliderimages" type="vikslidesmanager" label="" />
+			</fieldset>
+			
+			<fieldset name="slideroptions" label="SLIDEROPTIONS">
+				<field name="textoptions" type="header" default="TEXT OPTIONS" label="" />
+				<field name="title_effect" type="groupedlist" default="" label="Title Effect">
+                    <option value="none">No effect</option>
+                    <group label="Attention Seekers">
+                      <option value="bounce">bounce</option>
+                      <option value="flash">flash</option>
+                      <option value="pulse">pulse</option>
+                      <option value="rubberBand">rubberBand</option>
+                      <option value="shake">shake</option>
+                      <option value="swing">swing</option>
+                      <option value="tada">tada</option>
+                      <option value="wobble">wobble</option>
+                      <option value="jello">jello</option>
+                    </group>
+
+                    <group label="Bouncing Entrances">
+                      <option value="bounceIn">bounceIn</option>
+                      <option value="bounceInDown">bounceInDown</option>
+                      <option value="bounceInLeft">bounceInLeft</option>
+                      <option value="bounceInRight">bounceInRight</option>
+                      <option value="bounceInUp">bounceInUp</option>
+                    </group>
+
+                    <group label="Bouncing Exits">
+                      <option value="bounceOut">bounceOut</option>
+                      <option value="bounceOutDown">bounceOutDown</option>
+                      <option value="bounceOutLeft">bounceOutLeft</option>
+                      <option value="bounceOutRight">bounceOutRight</option>
+                      <option value="bounceOutUp">bounceOutUp</option>
+                    </group>
+
+                    <group label="Fading Entrances">
+                      <option value="fadeIn">fadeIn</option>
+                      <option value="fadeInDown">fadeInDown</option>
+                      <option value="fadeInDownBig">fadeInDownBig</option>
+                      <option value="fadeInLeft">fadeInLeft</option>
+                      <option value="fadeInLeftBig">fadeInLeftBig</option>
+                      <option value="fadeInRight">fadeInRight</option>
+                      <option value="fadeInRightBig">fadeInRightBig</option>
+                      <option value="fadeInUp">fadeInUp</option>
+                      <option value="fadeInUpBig">fadeInUpBig</option>
+                    </group>
+
+                    <group label="Fading Exits">
+                      <option value="fadeOut">fadeOut</option>
+                      <option value="fadeOutDown">fadeOutDown</option>
+                      <option value="fadeOutDownBig">fadeOutDownBig</option>
+                      <option value="fadeOutLeft">fadeOutLeft</option>
+                      <option value="fadeOutLeftBig">fadeOutLeftBig</option>
+                      <option value="fadeOutRight">fadeOutRight</option>
+                      <option value="fadeOutRightBig">fadeOutRightBig</option>
+                      <option value="fadeOutUp">fadeOutUp</option>
+                      <option value="fadeOutUpBig">fadeOutUpBig</option>
+                    </group>
+
+                    <group label="Flippers">
+                      <option value="flip">flip</option>
+                      <option value="flipInX">flipInX</option>
+                      <option value="flipInY">flipInY</option>
+                      <option value="flipOutX">flipOutX</option>
+                      <option value="flipOutY">flipOutY</option>
+                    </group>
+
+                    <group label="Lightspeed">
+                      <option value="lightSpeedIn">lightSpeedIn</option>
+                      <option value="lightSpeedOut">lightSpeedOut</option>
+                    </group>
+
+                    <group label="Rotating Entrances">
+                      <option value="rotateIn">rotateIn</option>
+                      <option value="rotateInDownLeft">rotateInDownLeft</option>
+                      <option value="rotateInDownRight">rotateInDownRight</option>
+                      <option value="rotateInUpLeft">rotateInUpLeft</option>
+                      <option value="rotateInUpRight">rotateInUpRight</option>
+                    </group>
+
+                    <group label="Rotating Exits">
+                      <option value="rotateOut">rotateOut</option>
+                      <option value="rotateOutDownLeft">rotateOutDownLeft</option>
+                      <option value="rotateOutDownRight">rotateOutDownRight</option>
+                      <option value="rotateOutUpLeft">rotateOutUpLeft</option>
+                      <option value="rotateOutUpRight">rotateOutUpRight</option>
+                    </group>
+
+                    <group label="Sliding Entrances">
+                      <option value="slideInUp">slideInUp</option>
+                      <option value="slideInDown">slideInDown</option>
+                      <option value="slideInLeft">slideInLeft</option>
+                      <option value="slideInRight">slideInRight</option>
+
+                    </group>
+                    <group label="Sliding Exits">
+                      <option value="slideOutUp">slideOutUp</option>
+                      <option value="slideOutDown">slideOutDown</option>
+                      <option value="slideOutLeft">slideOutLeft</option>
+                      <option value="slideOutRight">slideOutRight</option>
+                      
+                    </group>
+                    
+                    <group label="Zoom Entrances">
+                      <option value="zoomIn">zoomIn</option>
+                      <option value="zoomInDown">zoomInDown</option>
+                      <option value="zoomInLeft">zoomInLeft</option>
+                      <option value="zoomInRight">zoomInRight</option>
+                      <option value="zoomInUp">zoomInUp</option>
+                    </group>
+                    
+                    <group label="Zoom Exits">
+                      <option value="zoomOut">zoomOut</option>
+                      <option value="zoomOutDown">zoomOutDown</option>
+                      <option value="zoomOutLeft">zoomOutLeft</option>
+                      <option value="zoomOutRight">zoomOutRight</option>
+                      <option value="zoomOutUp">zoomOutUp</option>
+                    </group>
+
+                    <group label="Specials">
+                      <option value="hinge">hinge</option>
+                      <option value="rollIn">rollIn</option>
+                      <option value="rollOut">rollOut</option>
+                    </group>
+                </field>
+                <field name="desc_effect" type="groupedlist" default="" label="Description Effect">
+                    <option value="none">No effect</option>
+                    <group label="Attention Seekers">
+                      <option value="bounce">bounce</option>
+                      <option value="flash">flash</option>
+                      <option value="pulse">pulse</option>
+                      <option value="rubberBand">rubberBand</option>
+                      <option value="shake">shake</option>
+                      <option value="swing">swing</option>
+                      <option value="tada">tada</option>
+                      <option value="wobble">wobble</option>
+                      <option value="jello">jello</option>
+                    </group>
+
+                    <group label="Bouncing Entrances">
+                      <option value="bounceIn">bounceIn</option>
+                      <option value="bounceInDown">bounceInDown</option>
+                      <option value="bounceInLeft">bounceInLeft</option>
+                      <option value="bounceInRight">bounceInRight</option>
+                      <option value="bounceInUp">bounceInUp</option>
+                    </group>
+
+                    <group label="Bouncing Exits">
+                      <option value="bounceOut">bounceOut</option>
+                      <option value="bounceOutDown">bounceOutDown</option>
+                      <option value="bounceOutLeft">bounceOutLeft</option>
+                      <option value="bounceOutRight">bounceOutRight</option>
+                      <option value="bounceOutUp">bounceOutUp</option>
+                    </group>
+
+                    <group label="Fading Entrances">
+                      <option value="fadeIn">fadeIn</option>
+                      <option value="fadeInDown">fadeInDown</option>
+                      <option value="fadeInDownBig">fadeInDownBig</option>
+                      <option value="fadeInLeft">fadeInLeft</option>
+                      <option value="fadeInLeftBig">fadeInLeftBig</option>
+                      <option value="fadeInRight">fadeInRight</option>
+                      <option value="fadeInRightBig">fadeInRightBig</option>
+                      <option value="fadeInUp">fadeInUp</option>
+                      <option value="fadeInUpBig">fadeInUpBig</option>
+                    </group>
+
+                    <group label="Fading Exits">
+                      <option value="fadeOut">fadeOut</option>
+                      <option value="fadeOutDown">fadeOutDown</option>
+                      <option value="fadeOutDownBig">fadeOutDownBig</option>
+                      <option value="fadeOutLeft">fadeOutLeft</option>
+                      <option value="fadeOutLeftBig">fadeOutLeftBig</option>
+                      <option value="fadeOutRight">fadeOutRight</option>
+                      <option value="fadeOutRightBig">fadeOutRightBig</option>
+                      <option value="fadeOutUp">fadeOutUp</option>
+                      <option value="fadeOutUpBig">fadeOutUpBig</option>
+                    </group>
+
+                    <group label="Flippers">
+                      <option value="flip">flip</option>
+                      <option value="flipInX">flipInX</option>
+                      <option value="flipInY">flipInY</option>
+                      <option value="flipOutX">flipOutX</option>
+                      <option value="flipOutY">flipOutY</option>
+                    </group>
+
+                    <group label="Lightspeed">
+                      <option value="lightSpeedIn">lightSpeedIn</option>
+                      <option value="lightSpeedOut">lightSpeedOut</option>
+                    </group>
+
+                    <group label="Rotating Entrances">
+                      <option value="rotateIn">rotateIn</option>
+                      <option value="rotateInDownLeft">rotateInDownLeft</option>
+                      <option value="rotateInDownRight">rotateInDownRight</option>
+                      <option value="rotateInUpLeft">rotateInUpLeft</option>
+                      <option value="rotateInUpRight">rotateInUpRight</option>
+                    </group>
+
+                    <group label="Rotating Exits">
+                      <option value="rotateOut">rotateOut</option>
+                      <option value="rotateOutDownLeft">rotateOutDownLeft</option>
+                      <option value="rotateOutDownRight">rotateOutDownRight</option>
+                      <option value="rotateOutUpLeft">rotateOutUpLeft</option>
+                      <option value="rotateOutUpRight">rotateOutUpRight</option>
+                    </group>
+
+                    <group label="Sliding Entrances">
+                      <option value="slideInUp">slideInUp</option>
+                      <option value="slideInDown">slideInDown</option>
+                      <option value="slideInLeft">slideInLeft</option>
+                      <option value="slideInRight">slideInRight</option>
+
+                    </group>
+                    <group label="Sliding Exits">
+                      <option value="slideOutUp">slideOutUp</option>
+                      <option value="slideOutDown">slideOutDown</option>
+                      <option value="slideOutLeft">slideOutLeft</option>
+                      <option value="slideOutRight">slideOutRight</option>
+                      
+                    </group>
+                    
+                    <group label="Zoom Entrances">
+                      <option value="zoomIn">zoomIn</option>
+                      <option value="zoomInDown">zoomInDown</option>
+                      <option value="zoomInLeft">zoomInLeft</option>
+                      <option value="zoomInRight">zoomInRight</option>
+                      <option value="zoomInUp">zoomInUp</option>
+                    </group>
+                    
+                    <group label="Zoom Exits">
+                      <option value="zoomOut">zoomOut</option>
+                      <option value="zoomOutDown">zoomOutDown</option>
+                      <option value="zoomOutLeft">zoomOutLeft</option>
+                      <option value="zoomOutRight">zoomOutRight</option>
+                      <option value="zoomOutUp">zoomOutUp</option>
+                    </group>
+
+                    <group label="Specials">
+                      <option value="hinge">hinge</option>
+                      <option value="rollIn">rollIn</option>
+                      <option value="rollOut">rollOut</option>
+                    </group>
+                </field>
+                 <field name="readmore_effect" type="groupedlist" default="" label="Read More Effect">
+                    <option value="none">No effect</option>
+                    <group label="Attention Seekers">
+                      <option value="bounce">bounce</option>
+                      <option value="flash">flash</option>
+                      <option value="pulse">pulse</option>
+                      <option value="rubberBand">rubberBand</option>
+                      <option value="shake">shake</option>
+                      <option value="swing">swing</option>
+                      <option value="tada">tada</option>
+                      <option value="wobble">wobble</option>
+                      <option value="jello">jello</option>
+                    </group>
+
+                    <group label="Bouncing Entrances">
+                      <option value="bounceIn">bounceIn</option>
+                      <option value="bounceInDown">bounceInDown</option>
+                      <option value="bounceInLeft">bounceInLeft</option>
+                      <option value="bounceInRight">bounceInRight</option>
+                      <option value="bounceInUp">bounceInUp</option>
+                    </group>
+
+                    <group label="Bouncing Exits">
+                      <option value="bounceOut">bounceOut</option>
+                      <option value="bounceOutDown">bounceOutDown</option>
+                      <option value="bounceOutLeft">bounceOutLeft</option>
+                      <option value="bounceOutRight">bounceOutRight</option>
+                      <option value="bounceOutUp">bounceOutUp</option>
+                    </group>
+
+                    <group label="Fading Entrances">
+                      <option value="fadeIn">fadeIn</option>
+                      <option value="fadeInDown">fadeInDown</option>
+                      <option value="fadeInDownBig">fadeInDownBig</option>
+                      <option value="fadeInLeft">fadeInLeft</option>
+                      <option value="fadeInLeftBig">fadeInLeftBig</option>
+                      <option value="fadeInRight">fadeInRight</option>
+                      <option value="fadeInRightBig">fadeInRightBig</option>
+                      <option value="fadeInUp">fadeInUp</option>
+                      <option value="fadeInUpBig">fadeInUpBig</option>
+                    </group>
+
+                    <group label="Fading Exits">
+                      <option value="fadeOut">fadeOut</option>
+                      <option value="fadeOutDown">fadeOutDown</option>
+                      <option value="fadeOutDownBig">fadeOutDownBig</option>
+                      <option value="fadeOutLeft">fadeOutLeft</option>
+                      <option value="fadeOutLeftBig">fadeOutLeftBig</option>
+                      <option value="fadeOutRight">fadeOutRight</option>
+                      <option value="fadeOutRightBig">fadeOutRightBig</option>
+                      <option value="fadeOutUp">fadeOutUp</option>
+                      <option value="fadeOutUpBig">fadeOutUpBig</option>
+                    </group>
+
+                    <group label="Flippers">
+                      <option value="flip">flip</option>
+                      <option value="flipInX">flipInX</option>
+                      <option value="flipInY">flipInY</option>
+                      <option value="flipOutX">flipOutX</option>
+                      <option value="flipOutY">flipOutY</option>
+                    </group>
+
+                    <group label="Lightspeed">
+                      <option value="lightSpeedIn">lightSpeedIn</option>
+                      <option value="lightSpeedOut">lightSpeedOut</option>
+                    </group>
+
+                    <group label="Rotating Entrances">
+                      <option value="rotateIn">rotateIn</option>
+                      <option value="rotateInDownLeft">rotateInDownLeft</option>
+                      <option value="rotateInDownRight">rotateInDownRight</option>
+                      <option value="rotateInUpLeft">rotateInUpLeft</option>
+                      <option value="rotateInUpRight">rotateInUpRight</option>
+                    </group>
+
+                    <group label="Rotating Exits">
+                      <option value="rotateOut">rotateOut</option>
+                      <option value="rotateOutDownLeft">rotateOutDownLeft</option>
+                      <option value="rotateOutDownRight">rotateOutDownRight</option>
+                      <option value="rotateOutUpLeft">rotateOutUpLeft</option>
+                      <option value="rotateOutUpRight">rotateOutUpRight</option>
+                    </group>
+
+                    <group label="Sliding Entrances">
+                      <option value="slideInUp">slideInUp</option>
+                      <option value="slideInDown">slideInDown</option>
+                      <option value="slideInLeft">slideInLeft</option>
+                      <option value="slideInRight">slideInRight</option>
+
+                    </group>
+                    <group label="Sliding Exits">
+                      <option value="slideOutUp">slideOutUp</option>
+                      <option value="slideOutDown">slideOutDown</option>
+                      <option value="slideOutLeft">slideOutLeft</option>
+                      <option value="slideOutRight">slideOutRight</option>
+                      
+                    </group>
+                    
+                    <group label="Zoom Entrances">
+                      <option value="zoomIn">zoomIn</option>
+                      <option value="zoomInDown">zoomInDown</option>
+                      <option value="zoomInLeft">zoomInLeft</option>
+                      <option value="zoomInRight">zoomInRight</option>
+                      <option value="zoomInUp">zoomInUp</option>
+                    </group>
+                    
+                    <group label="Zoom Exits">
+                      <option value="zoomOut">zoomOut</option>
+                      <option value="zoomOutDown">zoomOutDown</option>
+                      <option value="zoomOutLeft">zoomOutLeft</option>
+                      <option value="zoomOutRight">zoomOutRight</option>
+                      <option value="zoomOutUp">zoomOutUp</option>
+                    </group>
+
+                    <group label="Specials">
+                      <option value="hinge">hinge</option>
+                      <option value="rollIn">rollIn</option>
+                      <option value="rollOut">rollOut</option>
+                    </group>
+                </field>
+
+                <field name="textalign" type="list" default="0" label="Text Align" description="Choose the alignement of your text slider">
+					<option value="center">Center</option>
+					<option value="left">Left</option>
+					<option value="right">Right</option>
+				</field>
+
+				<field name="readmoretext" type="text" default="Read More" label="SLIDERREADMORE" />
+
+				<field name="slidersetup" type="header" default="SLIDER OPTIONS" label="" />
+
+				<field name="interval" type="text" default="4000" label="INTERVAL" description="INTERVALDESC" />				
+
+				<field name="autoplay" type="radio" default="0" label="AUTOPLAY" description="AUTOPLAYDESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="navigation" type="radio" default="0" label="NAVIG" description="NAVIGDESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="dotsnav" type="radio" default="0" label="DOTS" description="DOTSDESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="libraries_options" type="header" default="LIBRARIES OPTION" label="" />
+
+				<field name="load_fontawesome" type="radio" default="0" label="Load Font Awesome" description="Load the Font Awesome Library">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="loadjq" type="radio" default="0" label="LOADJQ" description="LOADJQDESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="others_options" type="header" default="OTHERS OPTION" label="" />
+
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" default="_:default" />
+
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+
+			</fieldset>
+
+		</fields>
+	</config>
+  <updateservers>
+        <server type="extension" name="Vik Content Slider Module" priority="1">https://extensionsforjoomla.com/api/updates/free_modules/vikcontentslider.xml</server>
+    </updateservers>
+</extension>

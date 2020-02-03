@@ -1,0 +1,15 @@
+.indicators-line > .carousel-indicators {
+    left: 5% !important;
+    bottom: 20% !important;
+    width: auto !important;
+}
+.bs-slider .carousel-control .fa {
+    padding: 9px 0;
+}
+.slide-text h2 {
+	color: #fff;
+	font-weight: bold;
+}
+.carousel-inner > .item {
+	height: 100%;
+}

@@ -1,0 +1,469 @@
+@media screen and (max-width: 1280px) {
+    .leftsearch, .rightsearch, .centersearch {
+        left: 0;
+        transform: translate(0%, 0%);
+    }
+    .leftsearch .moduletable, .rightsearch .moduletable, .centersearch .moduletable {
+        width: 60% !important;
+    }
+    .h-search {
+        position: relative;
+    }
+    .vbo-search-submit {
+        margin-left: 0;
+    }
+
+    /*** --Start-- Mobile button ***/
+    #menumob-btn-ico {
+        display: block;
+    }
+    .menumob-btn {
+        display: block;
+        float: right;
+        display: inline-block;
+        margin: 25px 15px 0;
+        padding: 10px;
+        background:#fff;
+        border:1px solid #222;
+        display: flex;
+        flex-wrap: wrap;
+        order: 4;
+        margin-left: auto;
+        align-self: baseline;
+    }   
+    #headt-part .menumob-btn {
+        background-color:rgba(0,0,0,.8); 
+        border:0;
+    }
+    #menutitlemob {
+        cursor: pointer;
+        display: inline-block;
+        padding: 5px 10px 5px 10px;
+        color: #fff;
+        width: 21px;
+        height: 18px;
+        margin: 0 35px 0 25px;
+        border:0;
+    }
+    #tbar-logo {
+        margin-left: 10px;
+        flex-wrap: wrap;
+        display: flex;
+        align-self: center;
+        width: auto;
+        max-width: 250px;
+    }
+    #mainmenu, #tbar-user {
+        display: none;
+        float: none;
+        text-align: left;
+        background: #414141;
+    }
+    #form-login-remember label {
+        float: none;
+        padding-left: 0;
+    }
+    .vikcs-link {
+        display: none;
+    }
+    .menumobile .mainmenu-items .l-inline li > .l-block {
+        top: 34px;
+    }
+    .menumobile .mainmenu-items .moduletable ul > li > a,
+    .menumobile .mainmenu-items .moduletable ul > li > span {
+        color: #fff !important;
+    }
+    #mainmenu .menumobile > .mainmenu-items > .spt-menu {
+        margin: 15px 0 0 !important;
+    }
+    .menumobile .loginmenu {
+        display: block;
+        float: none;
+    }
+    .menumobile .loginmenu h3 {
+        padding: 5px;
+        margin: 10px 0 10px 0;
+    }
+    .menumobile .loginmenu #login-form {
+        top: 30px;
+    }
+    .fx-menu-slide {
+        animation: none !important;
+        -webkit-animation: none !important;
+        border-bottom: 0;
+        height: auto;
+        position: inherit;
+        top: 0;
+        z-index: 100000;
+    }
+    .fx-menu-slide #tbar-logo .moduletable img {
+        width: auto;
+    }
+    /*** --End-- Mobile button ***/
+}
+@media screen and (max-width: 1180px) { 
+    .vikcnt_left .vikgm_cnt_container {
+
+    }
+}
+@media screen and (max-width: 1160px) {
+    .search-horizontal h3 {
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1024px) { 
+    .vikicons-item {
+        width: 50%;
+        float: left;
+    }
+    .vbmodhorsearchcategoriesblock {
+        width: 100%;
+    }
+    .vbsearchinputmodhors {
+        margin-left: 0;
+    }
+    .vbo-rdet-info-room .vbo-rdet-descprice-block, .vbo-rdet-info-room .room_carats {
+        width: 100%;
+    }
+    .vbo-rdet-info-room .room_carats h3 {
+        margin:13px 20px 10px 0;
+    }
+}
+@media screen and (max-width: 900px) {
+    .vbo-promotion-bottom-block {
+        width: 60%;
+    }
+    .vbo-promotion-inn-info {
+        width: 38%;
+    }
+    .vbo-promotion-room-block {
+        width: 49%;
+    }
+    .offline-cc-overlay-inner {
+        width: 80%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media screen and (max-width: 860px) {
+    .vbo-room-details-booking-wrapper .vbo-search-submit {
+        margin-left: 0;
+    }
+    .vbo-room-details-booking-wrapper .vbo-search-num-aduchild-block {
+        margin-right: 20px;
+    }
+    .vbdialog-left, .vbdialog-right  {
+        width: 100%;
+    }
+    .vbdialogrimage img {
+        text-align: center;
+    }
+    #vbdialogrimage {
+        max-width: 50%;
+    }
+    .vbo-showprc-option-entry-name {
+        width: 50%;
+    }
+    .vbo-showprc-option-entry-cost {
+        margin-right: 5px;
+    }
+    .vbo-showprc-option-entry-input {
+        width: 13%;
+        float: right;
+    }
+}
+@media screen and (max-width: 800px) {
+    #mainmenu .loginmenu h3 {
+        padding: 6px 5px !important;
+    }
+    #mainmenu .e4jsign h3 {
+        background-position: left top;
+    }
+    #mainmenu .l-inline li .l-block > div {
+        background: transparent !important;
+        margin: 0 !important;
+    }
+    .contact-address > dl {
+        width: 100%;
+    }
+    .contact-address dd {
+        margin-left: 30px;
+        padding: 5px 0;
+    }
+    .vikthumbnail-grid figure {
+        width: 50%;
+    }
+    .e4j-newslett .e4j-float-left {
+        margin-right: 2em;
+    }
+    .vbo-sel span {
+        width: 90%;
+    }
+    .vb-search-inner .vbo-sel {
+        width: 55px;
+    }
+    .vbvordroominfo {
+        width: 50%;
+    }
+    .vbo-room-details-booking-wrapper .vbo-sel span {
+        width: 51%;
+    }
+    .vbo-search-mainview .vbo-search-roomnum {
+        text-align: left;
+    }
+    .vbo-availability-controls .vbo-sel span {
+        width: 80%;
+    }
+    .vbo-search-mainview .vbo-sel span {
+        width: 51%;
+    }
+    select, select option {
+        background-color: transparent;
+    }
+}
+@media screen and (max-width: 715px) {
+    #main {
+        float: none;
+        width: 100% !important;
+        left: 0 !important;
+    }
+    aside {
+        float: none;
+        width: 100% !important;
+    }
+    .grid-box {
+        float: none;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .sidebar .grid-module,
+    #module-box1 .grid-module,
+    footer .grid-module,
+    #subcontent .grid-module,
+    #upcontent .grid-module,
+    #module-box2 .grid-module {
+        width: 100% !important;
+        float: left;
+    }
+    #sidebar-left {
+        left: 0 !important;
+    }
+    #sidebar-right {
+        left: 0 !important;
+    }
+    #tbar-logo,
+    #tbar-logo-center {
+        display: inline-block;
+        position: relative;
+    }
+    #tbar-user .moduletable,
+    #tbar-user .moduletable_menu {
+        float: none;
+        width: 100%;
+    }
+    #tbar-user .moduletable:last-child,
+    #tbar-user .moduletable_menu:last-child {
+        margin: 0;
+    }
+    #mainmenu {
+        width: 100%;
+    }
+    #mainmenu .l-inline {
+        margin: 5px 0 0;
+    }
+    .blog .cols-3 .items-div-blog {
+        width: 96%;
+    }
+    .slogan-content .slogan-dx,
+    .slogan-content .slogan-sx {
+        display: none;
+    }
+    .slogan-content .slogan-mdl {
+        width: 100%;
+    }
+    .hor-search .vrisfentrymod {
+        border:0;
+        padding-left: 10px;
+    }
+    .vikicons-item {
+        width: 100%;
+        float: none;
+    }
+    .vikcnt_left .vikgm_cnt_container, .vikcnt_right .vikgm_cnt_container {
+        width: 100%;
+        position: relative;
+        top: 0 !important;
+        left: 0 !important;
+        transform: translate(0, 0) !important;
+        height: auto !important;
+    }
+    .vbo-showprc-option-entry-name {
+        width: 92%;
+    }
+    .vbo-showprc-option-entry-cost {
+        margin-right: 5px;
+        width: 80%;
+        margin-top: 8px;
+    }
+    .vbo-showprc-option-entry-input {
+        width: 13%;
+        float: right;
+    }
+}
+@media screen and (max-width: 690px) {
+    .vbo-sel span {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 660px) {
+    .vikcs-slide p {
+        font-size: 18px !important;
+    }
+    .vikwallimage-inner {
+        height: auto;
+        padding-bottom:20px;
+    }
+    .e4j-newslett .e4j-float-left {
+        width: 100%;
+        text-align: center;
+    }
+    .custom-newsletter input[type^="text"] {
+        margin:0 auto 5px;
+    }
+    .e4j-newslett .e4j-float-right {
+        width: 100%;
+    }
+    .vbroomimgdesc .vikfx-thumbslide-container {
+        width: 100% !important;
+        max-width: inherit;
+        margin-bottom:20px;
+    }
+    .vbroomimgdesc .vbo-showprc-info-room > * {
+        width: 100%;
+        margin-left: 0;
+    }
+    .vbo-showprc-option-entry-cost {
+        width: 70%;
+    }
+    .vbo-showprc-option-entry-input {
+        width: 25%;
+    }
+    .vbo-promotion-room-block {
+        width: 100%;
+    }
+    .flex-resp-wrap {
+        flex-wrap: wrap;
+    }
+    .flex-resp-wrap > div {
+        flex: 100%;
+    }
+    .category-module li {
+        flex: 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .vbo-room-details-booking-wrapper .vbo-search-num-aduchild-block {
+        margin-right: 0;
+    }
+    .vbo-search-num-aduchild-block {
+        margin-right: 0;
+        margin-top: 15px;
+    }
+    .vbo-search-num-aduchild-block .vbo-search-roomnum {
+        text-align: left;
+    }
+    .group-contact-left, .group-contact-right {
+        width: 100%;
+    }
+    .vikthumbnail-grid figure {
+        width: 100%;
+    }
+    .category-module li {
+        width: 100%;
+    }
+    .vbimglistdiv {
+        width: 100%;
+    }
+    .roomlist_carats .vbulcarats {
+        position: relative;
+    }
+    .vbo-results-head > .vbo-results-numadults {
+        margin-left: 0;
+    }
+     .vbo-showprc-option-entry-name {
+        text-align: center;
+        width: 100%;
+    }
+    .vbo-showprc-option-entry-cost {
+        width: 100%;
+    }
+    .vbo-showprc-option-entry-input {
+        width: 100%;
+        text-align: center;
+    }
+    .vbo-showprc-option-entry-input > * {
+        float: none;
+    }
+    .vbo-showprc-option-entry-img {
+        text-align: center;
+    }
+    .vbo-showprc-optionstable .vbo-showprc-option-entry > div {
+        text-align: center;
+        margin:5px 0;
+    }
+    .vbo-sel span {
+        width: 78%;
+    }
+    .vbo-search-num-racblock .vbo-sel span {
+        width: 50%;
+    }
+    .vbvordroominfo {
+        width: 100%;
+    }
+    .vbo-promotion-bottom-block, .vbo-promotion-inn-info {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .ui-datepicker.ui-datepicker-multi {
+        left: 0 !important;
+    }
+    .ui-datepicker-multi-2 .ui-datepicker-group {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    .sidebar .grid-module,
+    #module-box1 .grid-module,
+    footer .grid-module,
+    #subcontent .grid-module,
+    #upcontent .grid-module,
+    #module-box2 .grid-module {
+        width: 100% !important;
+        float: left;
+    }
+    .logorounded {
+        background: transparent;
+    }
+}
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1224px) {
+    .loginmenu .e4jaccountmanagercont {
+        left: auto;
+        right: 0;
+    }
+}
+}
+
+/***** Vik Content Slider ****/
+
+.vikcs-slide h2 {
+    font-size: 2em;
+    top: 9%;
+}

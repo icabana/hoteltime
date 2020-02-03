@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension type="template" version="2.5" client="site">
+	<name>E4J Seasons</name>
+	<version>2.3</version>
+	<creationDate>October 2018</creationDate>
+	<author>Valentina Arras - Extensions for joomla</author>
+	<authorEmail>templates@e4j.com</authorEmail>
+	<authorUrl>https://extensionsforjoomla.com</authorUrl>
+	<copyright>Template Design © Joomla Templates Extensionsforjoomla. All rights reserved.</copyright>
+	<description><![CDATA[ <style type='text/css'>
+	div.btnposxml {float:left; width:200px; text-align:center; padding:10px; margin:0 15px 0 0; border-radius:#F80; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; background:#f60;} 
+	div.btnposxml a {color:#fff;} 
+	div.btnvarxml {float:left; width:250px; text-align:center; padding:10px; border-radius:#273969; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; background:#304680;} 
+	div.btnvarxml a {color:#fff;}
+	span.mod-desc {line-height:2em;}
+	.pane-sliders .panel {border:0;} 
+	div.panel h3.pane-toggler-down, div.panel h3.pane-toggler {padding:10px; color:#116d86; border-top-left-radius:4px; border-top-right-radius:4px; -moz-border-top-left-radius:4px; -moz-border-top-right-radius:4px; -webkit-border-top-left-radius:4px; -webkit-border-top-right-radius:4px; background:#f6f6f6; border:1px solid #ccc;  border-top:2px solid #99CC00;} 
+	div.pane-slider.pane-down {border:1px solid #ccc; border-top:0;}
+	div.pane-slider ul.adminformlist li {border-bottom: 1px solid #EEEEEE; margin: 0; overflow: hidden; padding: 5px 5px;}
+	div.pane-slider ul.adminformlist li > label { height:20px; line-height:24px; margin: 0 10px 0 0; text-align:right;padding:10px 0px;}
+	div.pane-slider ul.adminformlist input, div.pane-slider ul.adminformlist select {padding:3px 5px; height:24px; line-height:24px; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px;}
+	.bt-doc { text-transform:uppercase; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; color:#fff; padding:8px 20px; font-size:14px; background:#116d86; display:inline-block; text-align:center; float:none; clear:both; margin:10px 0 0 0; }
+	.bt-doc:hover {text-decoration:none; color:#fff; background:#259aba;}
+	h1.maintit-e4jadmin {color:#666; text-transform:uppercase; font-size:18px; border-bottom:2px solid #116d86; margin:0 0 15px; padding:0 0 5px;}
+	p.desc-featured {font-weight:bold;font-size:14px; line-height:2em;}
+	.sectit-e4jadmin {font-size: 16px;}
+	h3.readdoc {margin:0; padding:0; border-top:2px solid #116d86; margin:15px 0 10px; padding:15px 0 0 0;}
+	.mod-bg-container {background:#f6f6f6; padding:20px; border:1px solid #e7e7e7;}
+	#jform_params_Header01-lbl {font-size:18px; text-transform:uppercase; font-weight:500;}
+	.warning-msg {border:2px solid #176fbd; padding: 20px; background:#fff; }
+	.vikmessage-update {margin-top: 20px; border: 2px dashed #cc0000;padding: 20px; font-size: 1.1em; line-height: 1.4em;}
+	</style>
+	<div class="mod-bg-container">
+	<p>Template E4J Seasons, created by e4j... and designed for the component VikBooking.<br /></p>
+	<h1 class="maintit-e4jadmin">Getting Started</h1>
+	<h2 class="sectit-e4jadmin">From the <em>Template Configuration</em> panel:</h2>
+	<p class="desc-featured">
+		
+		1. Choose your color layout<br />
+		2. Set your logo <br />
+		3. Set the template as Default <br/>
+		4. Start to set up your Modules just following the Template documentation, in this way you'll have your website as our demo website.
+	</p>
+	<div class="warning-msg">If once you've setup the template as Default you'll get a <strong>blank page</strong> in your website, don't worry, everything is working correctly,  you have to start to setup all the modules to let the template works properly. <br /> 
+	To start your configuration, at first, create a new Menu and setup it in the "mainmenu" position, then, follow the documentation to continue to configure your template.</div>
+	<h3 class="readdoc">CHECK THE DOCUMENTATION</h3>
+	<span>Download and Read the documentation of the template.</span>
+	<div><a class="bt-doc" href="https://extensionsforjoomla.com/documentations/template-seasons-documentation" target="_blank">Read the Documentation</a></div>
+	<p></p>
+	<div class="vikmessage-update"><h3>IMPORTANT:</h3>
+	<p>To enable the <strong style="color: #cc0000;">Template Update</strong> via Joomla Update panel you need to add your <strong style="color: #cc0000;">Order Number</strong> in the Seasons template configuration. <br />
+	Please, in the <strong style="color: #cc0000;"><em>Options</em></strong> panel of the Seasons Template Configuration add the <span style="text-decoration: underline;">e4j Order Number</span> of the template purchase. You can find it in your purchase email.<br />
+	In this way, every time that will be released a new Template version, your Joomla will warn you in the Control Panel of your Joomla website with the message "<strong>1 Extension Update(s) are available: View Updates</strong>", through the <strong>Update</strong> Joomla page you'll be able to see the new template version and update automatically by clicking the Update button. <br /> If you want to customize the template, please, be aware to add all your <strong>css modifications in the <em>custom.css</em> file</strong>, this file will never be overridden during the update and you'll never lose your customizations.</p>
+	<p></p>
+	</div>
+	</div>
+	<p></p>
+
+	]]>
+	</description>
+	<license>GPL</license>
+	
+<description>
+	</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>main.css</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>template_preview.png</filename>
+		<filename>params.ini</filename>
+		<filename>favicon.ico</filename>
+		<filename>error.php</filename>
+		<filename>offline.php</filename>
+		<folder>blocks</folder>
+		<folder>config</folder>
+		<folder>php</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+	</files>
+	<languages folder="language">
+    	<language tag="en-GB">en-GB/en-GB.tpl_e4jseasons.ini</language>
+    	<language tag="en-GB">en-GB/en-GB.tpl_e4jseasons.sys.ini</language>
+	</languages>
+	<positions>
+		<position>mainmenu</position>
+		<position>upmenu-right</position>
+		<position>upmenu-left</position>
+		<position>breadcrumb</position>
+		<position>slider-fullscreen</position>
+		<position>slide-down</position>
+		<position>module-box1</position>
+		<position>module-box2</position>
+		<position>full-up</position>
+		<position>fullbox</position>
+		<position>sidebar-right</position>
+		<position>sidebar-left</position>
+		<position>upcontent</position>
+		<position>subcontent</position>
+		<position>footer</position>
+		<position>subfooter</position>
+	</positions>
+	<config>
+		<fields name="params" addfieldpath="/templates/e4jseasons/php">
+			<fieldset name="CONFIGURATION">
+				<field name="Header01" type="header" default="Template Layout" label="" description="" />
+		    	<field name="tcolour" type="list" default="0" label="Colour Layout" description="Set template colour layout" >
+					<option value="0">Sky</option>
+					<option value="1">Purple</option>
+					<option value="2">Gold</option>
+					<option value="3">Green</option>
+					<option value="4">Orange</option>
+				</field>
+
+				<field name="getmenufixed" type="list" default="0" label="Menu fixed" description="Menu fixed on the top of your website" >
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="sliderwind" type="list" default="0" label="Slider Size" description="With this parameter you can choose if the slider will take all the windows size or a regular size based on smallest images. It works just with our Vik Content Slider module." >
+					<option value="0">Window</option>
+					<option value="1">Regular</option>
+				</field>
+
+				<field name="Header02" type="header" default="Setup the logo" label="" description="" />
+				<field name="logo" type="media" preview="true" directory="/images/" label="Logo" description="Insert your logo" />
+				<field name="logo-internal" type="media" preview="true" directory="/images/" label="Logo internal pages" description="Insert a different logo for the internal pages" />
+				<field name="logolink" type="text" default="" label="Insert your logo link" description="Insert your logo link" />
+
+				<field name="Header03" type="header" default="Setup the website fonts" label="" description="" />
+				<field name="headertxt" type="text" default="32px" label="Titles Font Size" description="Set a size for your Titles" />	
+				<field name="bodytxt" type="text" default="16px" label="Body text Font Size" description="Set a size for your website text" />
+				<field name="bfont" type="groupedlist" default="0" label="Body Font" description="Set template the body layout" >
+					<group label="Sans Serif">
+						<option value="0">Lato</option>
+						<option value="1">PT Sans</option>
+						<option value="2">Open Sans</option>
+						<option value="3">Droid Sans</option>
+						<option value="4">Century Gothic</option>
+						<option value="5">Arial</option>
+					</group>
+					<group label="Serif">
+						<option value="6">Lora</option>
+						<option value="7">Droid Serif</option>
+						<option value="8">Playfair Display</option>
+						<option value="9">PT Serif</option>
+					</group>
+				</field>
+				
+				<field name="hfont" type="groupedlist" default="6" label="Body Titles font" description="Choose your Body Titles font" >
+					<group label="Sans Serif">
+						<option value="0">Lato</option>
+						<option value="1">PT Sans</option>
+						<option value="2">Open Sans</option>
+						<option value="3">Droid Sans</option>
+						<option value="4">Century Gothic</option>
+						<option value="5">Arial</option>
+					</group>
+					<group label="Serif">
+						<option value="6">Lora</option>
+						<option value="7">Droid Serif</option>
+						<option value="8">Playfair Display</option>
+						<option value="9">PT Serif</option>
+					</group>
+				</field>
+
+				<field name="Header04" type="header" default="Setup the menu layout for the Homepage" label="" description="" />
+				<field name="menu-color" type="color" default="#fff" label="Menu text color" description="This color will be apply just in the Homepage of your website if you have enabled the Window slider." />
+			</fieldset>
+			<fieldset name="options">
+				<field name="Header05" type="header" default="Advanced Options" label="" description="" />
+				<field name="responsive" type="list" default="0" label="Responsive layout" description="This setting allows to display your website compatible with devices like mobile, Ipad, etc.." >
+					<option value="0">Yes</option>
+					<option value="1">No</option>
+				</field>
+
+				<field name="enabless" type="list" default="1" label="Less library" description="This setting allows you to enable the Less library in the case that your server has problems with LESS." >
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+
+				<field name="ordernumber" type="ordernumber" label="e4j Order Number" description="Insert your e4j order number to be always updated whenever a new version of the template is released." />
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" name="Template Seasons" priority="1">https://extensionsforjoomla.com/api/updates/com_vikbooking/templates/e4jseasons.xml</server>
+	</updateservers>
+
+</extension>

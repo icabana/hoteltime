@@ -1,0 +1,87 @@
+/**** PC Width ***/
+@import "desktop_devices.css";
+
+@media screen and (max-width: 1400px) {
+    .leftsearch, .rightsearch, .centersearch {
+        top: 1vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+	/*** General ***/ 
+	.upmenu-content, #subfoot-cont {
+		width: 100%;
+	}
+	main {
+		width: 100%;
+	}
+	#subcontent .grid-block .moduletable {
+		width: 100%;
+	}
+	.vikwallimage-desc .moduletable {
+		width: 100%;
+	}
+	#foot-cont {
+		width: 100%;
+	}
+	#subfoot-cont {
+		width: 100%;
+	}
+	#lmpart {
+		width: 100%;
+	}
+	#submenu {
+		width: 100%;
+	}
+	.module-fullwidth-cont, .module-centered {
+		width: 100%;
+	}
+	.h-search .grid-block {
+		width:100%;
+	}
+	#tbar-logo .moduletable {
+		text-align: center;
+	}
+	#tbar-logo .moduletable .custom {
+		text-align: center;
+	}
+	#mainmenu {
+		width: 100%;
+	}
+	#mainmenu .l-inline {
+		width:100%;
+	}
+	#contain-slider, .leftsearch, .rightsearch, .centersearch {
+		width: 100% !important;
+	}
+	.leftsearch .moduletable, .rightsearch .moduletable, .centersearch .moduletable {
+		width: 100% !important;
+	}
+	footer .grid-module .moduletable img {
+		width: auto;
+	}
+	.h-search {
+		position: relative;
+	}
+	.v-search {
+		top: 5px;
+		position: relative;
+	}
+	.h-search .moduletable,
+	.v-search .moduletable {
+		width: 100%;
+		float: left !important;
+	}
+	.logorounded {
+		min-height: inherit !important;
+	}
+	.menumobile {
+		position: relative;
+	}
+	footer form.email textarea {
+		width:93%;
+	}
+	.vbmodhorsearchmaindiv form .vbmodhorsearchbookdiv {
+		float: left !important;
+	}
+}

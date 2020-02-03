@@ -1,0 +1,350 @@
+@charset "utf-8";
+
+/**** Img Circle ***/
+.img-circle {
+	border:1px solid #ddd;
+	padding:3px;
+}
+
+/*** Img Left - Right ***/
+.img-left {
+	float: left;
+	margin: 0 15px 5px 0;
+}
+.img-right {
+	float: right;
+	margin: 0 0 15px 5px;
+}
+/**** Logo Rounded ****/
+#tbar-logo-center {
+	display: table;
+	margin: 0 auto;
+}
+.logorounded {
+	display: table;
+	margin: -31px auto 0;
+}
+/**** Module centered ****/
+.module-centered .moduletable {
+	width: 1280px;
+	margin: 30px auto !important;
+}
+/**** Small Row - create a small row just under the module ****/
+.small-row .moduletable {
+	position: relative;
+}
+.small-row .moduletable:after {
+	position: absolute;
+	width: 50px;
+	height: 1px;
+	background: #ccc;
+	content: "";
+	bottom: 0;
+	transform: translate(50%, 50%);
+	right: 50%;
+}
+
+/*** Module width forced to auto ***/
+.autowidth .moduletable, .autowidth.moduletable {
+	width: auto;
+	display: table;
+	margin-top: 20px;
+}
+
+/**** White - it makes white the background of the module. For the alignments with the website's spaces the padding it's 0 **/
+.white {
+	background: #fff;
+	padding: 20px;
+}
+
+/**** Grey - it makes grey the background of the module. **/
+.grey {
+	background: #F1F1F1;
+	padding: 25px 20px !important;
+}
+
+/**** Border Top. **/
+.border-top {
+	border-top:1px solid #eee;
+}
+/*** Background Transparent ***/
+.bg-transp {
+	background: transparent;
+}
+
+/**** imglarge - this cancel the padding only for the images **/
+.imglarge > .moduletable {
+	overflow: hidden;
+}
+.imglarge > .moduletable h3 {
+	padding: 0 0 25px 0;
+}
+.imglarge > .moduletable img {
+	margin: -9px 0 0 -10px;
+	width: 108%;
+}
+.white .moduletable > h3, .grey .moduletable > h3 {
+}
+.white .moduletable > img, .grey .moduletable > img {
+	margin: 0;
+}
+
+/**** leftborder - this cancel the padding only for the images **/
+
+.leftborder .moduletable {
+	overflow: hidden;
+}
+.leftborder .moduletable h3 {
+	/*margin: -15px 0 17px -15px;*/
+	margin: 10px 0 17px 0px;
+	padding: 0 0 0 15px;
+	border-left:3px solid #eee;
+}
+.leftborder.white .moduletable h3 {
+	margin: 0 0 17px;
+}
+
+/**** rightborder - this cancel the padding only for the images **/
+
+.rightborder .moduletable {
+	overflow: hidden;
+}
+.rightborder .moduletable h3 {
+	margin: 10px 0 17px 0px;
+	padding: 0 15px 0 0;
+	border-right:3px solid #eee;
+}
+.rightborder.white .moduletable h3 {
+	margin: 0 0 17px;
+}
+
+/**** Middle line Title ***/
+
+.middle-line  h3 {
+	position: relative;
+}
+.middle-line h3:before {
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 50%;
+	background: #ccc;
+	z-index: 1;
+}
+.middle-line .e4j-menutitle-cnt {
+	background: #fff;
+	padding: 0 10px 0 0;
+	z-index: 10;
+	position: relative;
+}
+#upcontent .middle-line .e4j-menutitle-cnt {
+	background: #f1f1f1;
+}
+
+/**** Center Title ***/
+
+.title-center .moduletable > h3 {
+	text-align: center;
+	margin: 0 auto 10px;
+	display: table;
+	width: 80%;
+}
+.title-center .e4j-menutitle-cnt {
+	padding: 0 15px;
+}
+
+/*** Underline Title ***/
+
+.underline .moduletable h3 {
+	position: relative;
+	border-bottom:1px solid #ddd;
+	padding: 0 0 15px 0;
+	margin-bottom:12px;
+}
+
+/**** Right Title ***/
+
+.title-right .moduletable h3 {
+	text-align: right;
+}
+
+.title-right .moduletable .e4j-menutitle-cnt {
+	padding: 0;
+}
+
+/*** Border Coloured ***/
+
+.border .moduletable {
+	border-width: 1px;
+	border-style: solid;
+	padding: 17px;
+	color: #666;
+	font-size: 16px;
+}
+
+/*** Color module Light ***/
+
+.color-light {
+	padding: 25px !important;
+	font-size: 16px;
+}
+
+/*** Color module ***/
+
+.color {
+	padding: 25px !important;
+	font-size: 16px;
+}
+.color h1 {
+	color: #fff;
+}
+
+/*** Menu Inline ***/
+.menu-inline ul {
+	margin: 45px 0;
+}
+.menu-inline li {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+/*** Newlsetter Custom ***/
+.custom-newsletter h4 {
+	font-weight: 400;
+}
+.custom-newsletter input[type^="text"] {
+	background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
+	border:2px solid #fff;
+	padding:5px 10px 8px;
+	color: #fff;
+	margin-bottom:5px;
+	display: inline-block;
+	width: 250px;
+}
+.custom-newsletter input[type^="submit"] {
+	background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 0 5px;
+    padding: 8px 25px;
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s;
+}
+.custom-newsletter input[type^="submit"]:hover {
+	background: rgba(255,255,255,0);
+	transition:all 400ms ease-in-out 0s;
+	-moz-transition:all 400ms ease-in-out 0s;
+	-webkit-transition:all 400ms ease-in-out 0s;
+	-o-transition:all 400ms ease-in-out 0s;
+}
+.vikwallimage-desc h2 {
+	margin-top: 0;
+	padding-top: 0;
+}
+.custom-newsletter h3 {
+	font-weight: 400;
+	font-size: 26px;
+	padding: 0;
+	margin: 0;
+}
+.e4j-float-left > h4 {
+    font-size: 16px;
+    margin: 3px 0 0;
+    padding: 0;
+}
+.e4j-newslett {
+	display: table;
+	margin: 0 auto;
+}
+.e4j-newslett .e4j-float-left {
+	float: left;
+	display: inline-block;
+	margin: 18px 7em 0 0;
+}
+.e4j-newslett .e4j-float-right {
+	float: right;
+	display: inline-block;
+	margin-top: 21px;
+}
+.custom-newsletter .vikwallimage-inner {
+}
+/*** Activties Boxes ***/
+
+.activities-cnt {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin:75px 0 40px;
+}
+.activities-cnt-inner {
+	width: 22%;
+	display: inline-block;
+	position: relative;
+	background: #fff;
+	padding: 15px 0;
+	margin: 0 30px 0 0;
+	border:1px solid #fff;
+}
+.activities-cnt-inner:last-child {
+	margin: 0;
+}
+.activities-cnt-img {
+	position: absolute;
+	top: -55px;
+	width: 100%;
+}
+.activities-cnt-img img {
+	width: 135px;
+	height: 135px;
+	border-radius: 50%;
+	text-align: center;
+}
+.activities-cnt-text h4 {
+	font-size: 22px;
+}
+.activities-cnt-text {
+	font-size: 16px;
+	padding: 75px 15px 15px;
+}
+.text-big {
+	font-size: 2.6em;
+}
+.text-medium {
+	font-size: 1.6em;
+}
+
+/*** Sponsor ***/
+.sponsor-main {
+	display: inline-block;
+	width: 100%;
+}
+.sponsor-main > div {
+	border:2px solid #ddd;
+	padding: 5px;
+	float: left;
+	display: inline-block;
+	margin:5px;
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s;
+}
+.sponsor-main > div:hover {
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s;
+}
+
+/*** Hide on Devices ***/
+@media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
+	.device-off {
+		display: none;
+	}
+}

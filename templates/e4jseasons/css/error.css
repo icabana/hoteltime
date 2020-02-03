@@ -1,0 +1,121 @@
+/**
+ * @copyright	Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+/* Start Common Styles */
+* {
+	font-family: helvetica, arial, sans-serif;
+	color: #5F6565;
+}
+
+html {
+	height: 100%;
+	margin-bottom: 1px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	margin-bottom: 1px;
+	background: #fbfbfb;
+	font-family: helvetica, arial, sans-serif;
+	font-weight: normal;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.error {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table, td, th, div, pre, blockquote, ul, ol, dl, address,.componentheading,.contentheading,.contentpagetitle,.sectiontableheader,.newsfeedheading {
+	font-family: helvetica, arial, sans-serif;
+	font-weight: normal;
+}
+
+#outline {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+#errorboxoutline {
+	width: 900px;
+	margin: 0px;
+	padding: 0px;
+}
+#errorboxheader {
+	width: 900px;
+	margin: 0px;
+	padding: 0px;
+	background: #E44249;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 22px;
+	text-align: center;
+	border-bottom: 1px solid #000000;
+}
+#errorboxbody {
+	margin: 0px;
+	padding: 10px;
+	text-align: left;
+}
+#techinfo {
+	margin: 10px;
+	padding: 10px;
+	text-align: left;
+	border: 1px solid #CCCCCC;
+	color: #CCCCCC;
+}
+#techinfo p {
+	color: #CCCCCC;
+}
+#errorpage-code {
+	text-align: center;
+}
+#errorpage-code > * {
+	display: block;
+}
+#errorpage-code img {
+	width: 218px;
+	margin: 0 auto;
+}
+#errorpage-code strong {
+	font-size: 160px;
+	color: #414A52;
+	margin-top: -15px;
+	font-weight: normal;
+}
+#errorpage-code span {
+	font-size: 42px;
+}
+.errorpage-submessage {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 60px;
+	font-size: 42px;
+}
+.errorpage-errordesc {
+	text-align: center;
+	margin-top: 10px;
+}
+.errorpage-link {
+	margin-top: 40px;
+	text-align: center;
+}
+.errorpage-link a {
+	display: inline-block;
+	background: #444;
+	border:1px solid #333;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 15px 8px; 
+	font-size: 18px;
+	font-weight: normal;
+	text-decoration: none;
+}
